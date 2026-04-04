@@ -1,5 +1,5 @@
----
 minimum_prek_version: "0.3.8"
+
 default_install_hook_types:
   - pre-commit
   - commit-msg
@@ -16,6 +16,9 @@ repos:
       - id: check-json5
       - id: check-toml
       - id: check-yaml
+        args: [--allow-multiple-documents]
+      - id: check-merge-conflict
+      - id: check-added-large-files
       - id: check-xml
       - id: mixed-line-ending
       - id: check-symlinks
