@@ -5,7 +5,7 @@
 - self:
     - repo:
         url: https://github.com/common-repo/upstream
-        ref: v2.0.1
+        ref: v2.0.3
         with:
         - template-vars:
             GH_APP_ID_SECRET: COMMON_REPO_BOT_CLIENT_ID
@@ -16,3 +16,6 @@
 - include: ["src/**"]
 - rename:
     - "^src/(.*)$": "$1"
+- yaml:
+    auto-merge: .pre-commit-config.yaml
+    defer: true # only auto-merge when used as an upstream
