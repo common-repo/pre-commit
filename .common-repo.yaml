@@ -6,7 +6,7 @@
     - repo:
         url: https://github.com/common-repo/upstream
         ref: v2.0.1
-        with: 
+        with:
         - template-vars:
             GH_APP_ID_SECRET: COMMON_REPO_BOT_CLIENT_ID
             GH_APP_KEY_SECRET: COMMON_REPO_BOT_PRIVATE_KEY
