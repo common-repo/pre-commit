@@ -41,5 +41,8 @@ jobs:
     name: Test
     runs-on: ubuntu-latest
     steps:
-      - name: Dummy test step
-        run: exit 0
+      - uses: actions/checkout@v4
+
+      - name: Run tests
+        run: |
+          [ ! -x "script/test" ] || script/test
