@@ -73,10 +73,3 @@ jobs:
           GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
     outputs:
       publish: ${{ steps.release.outputs.publish }}
-
-  test:
-    name: Test
-    runs-on: ubuntu-latest
-    steps:
-      - name: Dummy test step
-        run: exit 0

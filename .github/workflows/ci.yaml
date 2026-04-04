@@ -36,3 +36,10 @@ jobs:
 
       - name: Dry-run apply
         run: common-repo apply --dry-run
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dummy test step
+        run: exit 0
