@@ -18,4 +18,3 @@
 - yaml:
     auto-merge: .pre-commit-config.yaml
     array_mode: append_unique
-    defer: true
