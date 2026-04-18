@@ -5,14 +5,24 @@ default_install_hook_types:
   - pre-commit
   - commit-msg
 
+# File-modifying hooks (end-of-file-fixer, trailing-whitespace,
+# mixed-line-ending, fix-byte-order-marker) get a shared exclude pattern for
+# files the repo doesn't author by hand — release artifacts (CHANGELOG.md,
+# RELEASES.md) and LLM/agent-managed files (CLAUDE.md, AGENTS.md, llms.txt,
+# .claude/, .cursor/, .github/copilot-instructions.md). Rewriting those in
+# place causes CI to fail every release when the generator's output doesn't
+# match the hook's formatting rules.
 repos:
   - repo: builtin
     hooks:
       - id: trailing-whitespace
+        exclude: '^(CHANGELOG\.md|RELEASES\.md|CLAUDE\.md|AGENTS\.md|llms\.txt|\.claude/.*|\.cursor/.*|\.github/copilot-instructions\.md)$'
       - id: check-added-large-files
       - id: check-case-conflict
       - id: end-of-file-fixer
+        exclude: '^(CHANGELOG\.md|RELEASES\.md|CLAUDE\.md|AGENTS\.md|llms\.txt|\.claude/.*|\.cursor/.*|\.github/copilot-instructions\.md)$'
       - id: fix-byte-order-marker
+        exclude: '^(CHANGELOG\.md|RELEASES\.md|CLAUDE\.md|AGENTS\.md|llms\.txt|\.claude/.*|\.cursor/.*|\.github/copilot-instructions\.md)$'
       - id: check-json
       - id: check-json5
       - id: check-toml
@@ -22,6 +32,7 @@ repos:
       - id: check-added-large-files
       - id: check-xml
       - id: mixed-line-ending
+        exclude: '^(CHANGELOG\.md|RELEASES\.md|CLAUDE\.md|AGENTS\.md|llms\.txt|\.claude/.*|\.cursor/.*|\.github/copilot-instructions\.md)$'
       - id: check-symlinks
       - id: detect-private-key
       - id: check-executables-have-shebangs
