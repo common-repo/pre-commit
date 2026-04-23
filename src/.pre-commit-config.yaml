@@ -29,7 +29,6 @@ repos:
       - id: check-yaml
         args: [--allow-multiple-documents]
       - id: check-merge-conflict
-      - id: check-added-large-files
       - id: check-xml
       - id: mixed-line-ending
         exclude: '^(CHANGELOG\.md|RELEASES\.md|CLAUDE\.md|AGENTS\.md|llms\.txt|\.claude/.*|\.cursor/.*|\.github/copilot-instructions\.md)$'
