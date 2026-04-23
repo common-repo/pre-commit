@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v1.4.1 - 2026-04-23
+#### Bug Fixes
+- (**pre-commit**) remove duplicate check-added-large-files hook - (e8bba2b) - Jacob Alheid
+
+- - -
+
 ## v1.4.0 - 2026-04-21
 #### Features
 - (**common-repo**) update upstream to v2.1.4 - (793f9a9) - Jacob Alheid
