@@ -2,6 +2,17 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v1.4.2 - 2026-11-03
+#### Bug Fixes
+- (**deps**) update checkout and prek action pins - (9baa521) - Jathan McCollum
+- (**pre-commit**) remove duplicate check-added-large-files hook - (e8bba2b) - Jacob Alheid
+#### Documentation
+- add agent navigation index and Claude pointer - (290f13d) - Jacob Alheid
+#### Miscellaneous Chores
+- drop CLAUDE.md shim; AGENTS.md is read natively - (aaaeeaa) - Jacob Alheid
+
+- - -
+
 ## v1.4.0 - 2026-04-21
 #### Features
 - (**common-repo**) update upstream to v2.1.4 - (793f9a9) - Jacob Alheid
