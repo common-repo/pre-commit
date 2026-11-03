@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v1.5.0 - 2026-11-03
+#### Features
+- (**common-repo**) update upstream to v2.3.0 - (18188be) - jathanism
+#### Continuous Integration
+- (**release**) self-heal unsuperseded dangling release tags - (5253686) - jathanism
+
+- - -
+
 ## v1.4.2 - 2026-11-03
 #### Bug Fixes
 - (**deps**) update checkout and prek action pins - (9baa521) - Jathan McCollum
