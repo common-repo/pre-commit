@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v1.6.0 - 2026-11-04
+#### Features
+- (**workflow**) name the pre-commit workflow steps - (5a42d5f) - Devin AI, *Devin AI*
+
+- - -
+
 ## v1.5.1 - 2026-11-03
 #### Miscellaneous Chores
 - (**version**) v1.5.0 - (ddd08d1) - jathanism
