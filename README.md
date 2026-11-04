@@ -17,6 +17,8 @@ The template writes two files to the repo root when applied:
 
 The config requires `prek >= 0.3.8` and installs `pre-commit` and `commit-msg` hook types.
 
+The workflow's steps are named (`Checkout`, `Run prek`) so a repo that merges it into its own workflow can key the merge on step names (`array_mode: merge_by_key`, `key: name`): a pin bump then updates each step in place instead of appending a second copy. Keep these names stable, and use the same names on the matching steps of a workflow that merges this one.
+
 ## Usage
 
 Add the template to `.common-repo.yaml`:
